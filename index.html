@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive galerija</title>
+</head>
+
+<style>
+body{
+        width: 90%;
+        max-width: 1000px;
+        margin: 0 auto;
+    
+}
+img{
+   background-color:rgb(36, 165, 216);
+   width: 150px;
+   height: 100px;
+   border-radius: 10px;
+  
+}
+
+#Placeholder{
+    display: grid;
+    grid-template-columns: repeat(5, 160px);
+    grid-template-rows: 100px 100px;
+    column-gap: 50px;
+    row-gap: 50px;
+
+    }
+
+    @media screen and (max-width: 1024px) {
+        #Placeholder {
+grid-template-columns: repeat(5, 1fr);
+}
+}
+
+@media screen and (max-width: 768px) {
+    #Placeholder {
+grid-template-columns: repeat(3, 1fr);
+}
+}
+
+@media screen and (max-width: 414px) {
+    #Placeholder {
+grid-template-columns: repeat(1, 1fr);
+}
+}
+
+
+p{
+    padding-top: 50px;
+
+}
+
+
+
+</style>
+
+
+
+<body>
+
+    <h1>Gallery Heading</h1>
+
+
+    <div id="Placeholder">
+    <img src="placeholder-image.png" alt="Placeholder1" id="img1">
+    <img src="placeholder-image.png" alt="Placeholder2"id="img2">
+    <img src="placeholder-image.png" alt="Placeholder3"id="img3">
+    <img src="placeholder-image.png" alt="Placeholder4"id="img4">
+    <img src="placeholder-image.png" alt="Placeholder5"id="img5">
+    <img src="placeholder-image.png" alt="Placeholder6"id="img6">
+    <img src="placeholder-image.png" alt="Placeholder7"id="img7">
+    <img src="placeholder-image.png" alt="Placeholder8"id="img8">
+    <img src="placeholder-image.png" alt="Placeholder9"id="img9">
+    <img src="placeholder-image.png" alt="Placeholder10"id="img10">
+
+  
+    </div>
+
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio facere rerum quia est eos atque iste eum consectetur recusandae laborum, eius dolor nihil dolorum voluptas explicabo neque provident vero similique.
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio facere rerum quia est eos atque iste eum consectetur recusandae laborum, eius dolor nihil dolorum voluptas explicabo neque provident vero similique.</p>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
